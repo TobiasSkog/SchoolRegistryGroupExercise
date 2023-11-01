@@ -25,11 +25,7 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> c3079063c6c113e80bee15812974c266701db910
             }
         }
 
