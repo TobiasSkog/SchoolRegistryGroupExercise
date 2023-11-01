@@ -1,5 +1,4 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
-using System.ComponentModel.Design;
 
 namespace SchoolRegistryGroupExercise
 {
@@ -16,13 +15,17 @@ namespace SchoolRegistryGroupExercise
             RunApp = true;
             //Return = new Return();
             //Meny = new Meny();
-        }
 
+        }
+        private void Quit()
+        {
+            RunApp = false;
+        }
         public void Run()
         {
             while (RunApp)
             {
-                Meny menu =new Meny
+
             }
         }
 
