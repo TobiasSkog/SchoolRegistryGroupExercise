@@ -3,23 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SchoolRegistryGroupExercise.Classes;
 
 namespace SchoolRegistryGroupExercise.Logic
 {
     internal class Return
     {
-        public void PrintRoleInfo(string role)
-        {
-            Console.WriteLine($"Förnamn: {FirstName}, Efternamn: {LastName}, Roll: {Role}, Personnummer: {PersonalNumber}");
+       public Person CreateClassBaseOnUserInput(Role role)
+        {          
+
+            Console.Write("Skriv in förnam: ");
+            string firstName = Console.ReadLine();
+            Console.Write("Skriv in efternamn: ");
+            string lastName = Console.ReadLine();
+            Console.Write("Skriv in personummer: ");
+            int peronalNumber = int.Parse(Console.ReadLine());
+
+
             switch (role)
             {
-                case "Lärare":
-                    Console.WriteLine("Detta är en lärare. Ämne: " + Role);
-                    break;
-                case "Student":
-                    Console.WriteLine("Detta är en student. Kurs: " + Role);
-                    break;                   
+                case Role.Teacher:
+                    Console.Write("Vilken ämne: ");
+                    string subject = Console.ReadLine();
+                    return new Teacher(subject, firstName,lastName,peronalNumber);
+                    
+                case Role.Student:
+                    Console.Write("Vilken kurs: ");
+                    string course = Console.ReadLine();
+                    return new Student(course, firstName, lastName, peronalNumber);                                        
             }
-        }
+            return default;
+        }                   
     }
 }
