@@ -15,13 +15,21 @@ namespace SchoolRegistryGroupExercise
             RunApp = true;
             //Return = new Return();
             //Meny = new Meny();
-        }
 
+        }
+        private void Quit()
+        {
+            RunApp = false;
+        }
         public void Run()
         {
             while (RunApp)
             {
-                //hej
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> c3079063c6c113e80bee15812974c266701db910
             }
         }
 
