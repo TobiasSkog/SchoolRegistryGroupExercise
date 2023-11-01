@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Meny\" />
     <Folder Include="Logic\" />
     <Folder Include="App\" />
   </ItemGroup>
