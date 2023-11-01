@@ -1,11 +1,13 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
+using SchoolRegistryGroupExercise.ConsoleOut;
+using SchoolRegistryGroupExercise.Logic;
 
 namespace SchoolRegistryGroupExercise
 {
     public class App
     {
         private List<Person> Register { get; set; }
-        //private Return Return { get; set; }
+        //private Return Return { get; set; }       
         private bool RunApp { get; set; }
 
         public App()
@@ -27,7 +29,7 @@ namespace SchoolRegistryGroupExercise
 
                 while (menuchoice != "0" || menuchoice != "exit")
                 {
-                    Meny.Meny.PrintMenu();
+                    Meny.PrintMenu();
 
                     menuchoice = Console.ReadLine();
 
@@ -35,18 +37,26 @@ namespace SchoolRegistryGroupExercise
                     {
                         case "1":
                             //lägg till lärare
+                            var teacher = Return.CreateClassBaseOnUserInput(Role.Teacher);
+                            Register.Add(teacher);
+
                             break;
                         case "2":
                             //lägg till elev
+                            var student = Return.CreateClassBaseOnUserInput(Role.Student);
+                            Register.Add(student);
                             break;
                         case "3":
                             //skriver ut alla lärare
+                            PrintAllTeachers(Register);
                             break;
                         case "4":
                             //skriv ut alla studerande
+                            PrintAllStudents(Register);
                             break;
                         case "5":
                             //skriv ut alla
+                            PrintEveryone(Register);
                             break;
                         case "0":
                         case "exit":
@@ -60,7 +70,10 @@ namespace SchoolRegistryGroupExercise
                             break;
                     }
                 }
+
             }
         }
+   
+    
     }
 }
