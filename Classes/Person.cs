@@ -13,12 +13,12 @@
         public Role Role { get; set; }
         public int PersonalNumber { get; set; }
 
-        public Person(string firstname, string lastname, int personalnumber)
+        public Person(string firstName, string lastName, int personalNumber)
         {
-            FirstName = firstname;
-            LastName = lastname;
+            FirstName = firstName;
+            LastName = lastName;
             Role = Role.Invalid;
-            PersonalNumber = personalnumber;
+            PersonalNumber = personalNumber;
         }
 
         public abstract void PrintInfo();
