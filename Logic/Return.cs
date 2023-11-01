@@ -7,9 +7,9 @@ using SchoolRegistryGroupExercise.Classes;
 
 namespace SchoolRegistryGroupExercise.Logic
 {
-    internal class Return
+    internal static class Return
     {
-       public Person CreateClassBaseOnUserInput(Role role)
+       public static Person CreateClassBaseOnUserInput(Role role)
         {          
 
             Console.Write("Skriv in förnam: ");

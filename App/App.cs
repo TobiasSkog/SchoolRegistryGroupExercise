@@ -5,7 +5,7 @@ namespace SchoolRegistryGroupExercise
     public class App
     {
         private List<Person> Register { get; set; }
-        //private Return Return { get; set; }
+        //private Return Return { get; set; }       
         private bool RunApp { get; set; }
 
         public App()
@@ -35,10 +35,14 @@ namespace SchoolRegistryGroupExercise
                     {
                         case "1":
                             //lägg till lärare
-                            
+                            var teacher = Logic.Return.CreateClassBaseOnUserInput(Role.Teacher);
+                            Register.Add(teacher);
+
                             break;
                         case "2":
                             //lägg till elev
+                            var student = Logic.Return.CreateClassBaseOnUserInput(Role.Student);
+                            Register.Add(student);
                             break;
                         case "3":
                             //skriver ut alla lärare
