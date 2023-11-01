@@ -15,7 +15,6 @@ namespace SchoolRegistryGroupExercise
             Register = new List<Person>();
             RunApp = true;
             //Return = new Return();
-
         }
         private void Quit()
         {
@@ -25,13 +24,9 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
-                string menuchoice = "";
-
-                while (menuchoice != "0" || menuchoice != "exit")
-                {
                     Meny.PrintMenu();
 
-                    menuchoice = Console.ReadLine();
+                   string menuchoice = Console.ReadLine();
 
                     switch (menuchoice)
                     {
@@ -56,7 +51,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                         case "5":
                             //skriv ut alla
-                            PrintEveryone(Register);
+                            //PrintEveryone(Register);
                             break;
                         case "0":
                         case "exit":
@@ -70,10 +65,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                     }
                 }
-
             }
-        }
-   
-    
+        }    
     }
-}
+

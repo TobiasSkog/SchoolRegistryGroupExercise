@@ -5,7 +5,7 @@
         public static void PrintMenu()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("***** Skolregistret *****");
+            Console.WriteLine("\n***** Skolregistret *****\n");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("(1) Lägg till lärare");
             Console.WriteLine("(2) Lägg till elev");

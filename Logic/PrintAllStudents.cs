@@ -11,15 +11,15 @@ namespace SchoolRegistryGroupExercise.Logic
     {
         public static void PrintStudents(List<Person> Register)
         {
-
+            
             foreach (Student student in Register)
-                if (student != null)
+                if (student != null) //får inte till felhanteringen riktigt än
                 {
                     {
                         Console.WriteLine(student.FirstName + " " + student.LastName); //Bara namn eller all info?
                     }
                 }
-                else { Console.WriteLine("Det finns inga studenter i registret"); }
+                else { Console.WriteLine("Det finns inga fler elever i registret"); }
         }
     }
 }
