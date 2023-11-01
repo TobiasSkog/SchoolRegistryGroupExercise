@@ -41,12 +41,15 @@ namespace SchoolRegistryGroupExercise
                             break;
                         case "3":
                             //skriver ut alla lärare
+                            PrintAllTeachers();
                             break;
                         case "4":
                             //skriv ut alla studerande
+                            PrintAllStudents();
                             break;
                         case "5":
                             //skriv ut alla
+                            PrintEveryone();
                             break;
                         case "0":
                         case "exit":
@@ -60,7 +63,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                     }
                 }
-                
+
             }
         }
 
