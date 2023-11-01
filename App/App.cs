@@ -25,7 +25,44 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
+                string menuchoice = "";
 
+                while (menuchoice != "0" || menuchoice != "exit")
+                {
+                    Meny.Meny.PrintMenu();
+
+                    menuchoice = Console.ReadLine();
+
+                    switch (menuchoice)
+                    {
+                        case "1":
+                            //lägg till lärare
+                            break;
+                        case "2":
+                            //lägg till elev
+                            break;
+                        case "3":
+                            //skriver ut alla lärare
+                            break;
+                        case "4":
+                            //skriv ut alla studerande
+                            break;
+                        case "5":
+                            //skriv ut alla
+                            break;
+                        case "0":
+                        case "exit":
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Tack för idag!");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Quit();
+                            break;
+                        default:
+                            Console.WriteLine("Välj någon av kategorierna ovan.\n");
+                            break;
+                    }
+                }
+                
             }
         }
 

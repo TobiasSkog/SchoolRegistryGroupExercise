@@ -2,46 +2,6 @@
 {
     public static class Meny
     {
-        public static bool Menu()
-        {
-            string menuchoice = "";
-            
-            while (menuchoice != "0" || menuchoice != "exit")
-            {
-                PrintMenu();
-
-                menuchoice = Console.ReadLine();
-
-                switch (menuchoice)
-                {
-                    case "1":
-                        //lägg till lärare
-                        break;
-                    case "2":
-                        //lägg till elev
-                        break;
-                    case "3":
-                        //skriver ut alla lärare
-                        break;
-                    case "4":
-                        //skriv ut alla studerande
-                        break;
-                    case "5":
-                        //skriv ut alla
-                        break;
-                    case "0":
-                    case "exit":
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Tack för idag!");
-                        Console.ForegroundColor = ConsoleColor.White;
-                        return false;
-                    default:
-                        Console.WriteLine("Välj någon av kategorierna ovan.\n");
-                        break;
-                }
-            }
-            return true;
-        }
         public static void PrintMenu()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
