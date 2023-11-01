@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SchoolRegistryGroupExercise.Classes
+﻿namespace SchoolRegistryGroupExercise.Classes
 {
     internal class Student : Person
     {
         public string Course { get; set; }
 
         public Student(string course, string firstName, string lastName, int personalNumber)
-            : base (firstName, lastName, personalNumber)
+            : base(firstName, lastName, personalNumber)
         {
             Course = course;
             Role = Role.Student;

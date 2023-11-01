@@ -1,4 +1,5 @@
-﻿namespace SchoolRegistryGroupExercise.Logic
+﻿using SchoolRegistryGroupExercise.Classes;
+namespace SchoolRegistryGroupExercise.Logic
 {
     internal static class Return
     {

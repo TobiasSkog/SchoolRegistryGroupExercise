@@ -1,4 +1,6 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
+using SchoolRegistryGroupExercise.ConsoleOut;
+using SchoolRegistryGroupExercise.Logic;
 
 namespace SchoolRegistryGroupExercise
 {
@@ -27,7 +29,7 @@ namespace SchoolRegistryGroupExercise
 
                 while (menuchoice != "0" || menuchoice != "exit")
                 {
-                    Meny.Meny.PrintMenu();
+                    Meny.PrintMenu();
 
                     menuchoice = Console.ReadLine();
 
@@ -35,13 +37,13 @@ namespace SchoolRegistryGroupExercise
                     {
                         case "1":
                             //lägg till lärare
-                            var teacher = Logic.Return.CreateClassBaseOnUserInput(Role.Teacher);
+                            var teacher = Return.CreateClassBaseOnUserInput(Role.Teacher);
                             Register.Add(teacher);
 
                             break;
                         case "2":
                             //lägg till elev
-                            var student = Logic.Return.CreateClassBaseOnUserInput(Role.Student);
+                            var student = Return.CreateClassBaseOnUserInput(Role.Student);
                             Register.Add(student);
                             break;
                         case "3":
