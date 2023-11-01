@@ -1,4 +1,4 @@
-﻿namespace SchoolRegistryGroupExercise.Meny
+﻿namespace SchoolRegistryGroupExercise.ConsoleOut
 {
     public static class Meny
     {
