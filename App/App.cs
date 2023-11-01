@@ -48,7 +48,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                         case "3":
                             //skriver ut alla lärare
-                            PrintAllTeachers(Register);
+                            PrintAllTeachers.PrintTeachers(Register);
                             break;
                         case "4":
                             //skriv ut alla studerande

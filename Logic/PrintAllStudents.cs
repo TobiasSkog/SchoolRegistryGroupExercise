@@ -16,7 +16,7 @@ namespace SchoolRegistryGroupExercise.Logic
                 if (student != null)
                 {
                     {
-                        Console.WriteLine(student.FirstName + student.LastName); //Bara namn eller all info?
+                        Console.WriteLine(student.FirstName + " " + student.LastName); //Bara namn eller all info?
                     }
                 }
                 else { Console.WriteLine("Det finns inga studenter i registret"); }
