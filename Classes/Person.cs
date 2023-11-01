@@ -8,19 +8,12 @@
     }
     public abstract class Person
     {
-        public enum Roles
-        {
-           Teacher, 
-           Student,
-           Invalid
-        }
-        
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Role { get; set; }
+        public Role Role { get; set; }
         public int PersonalNumber { get; set; }
 
-        public Person(string firstname, string lastname, string role, int personalnumber)
+        public Person(string firstname, string lastname, int personalnumber)
         {
             FirstName = firstname;
             LastName = lastname;
