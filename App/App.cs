@@ -1,6 +1,7 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
+using System.ComponentModel.Design;
 
-namespace SchoolRegistryGroupExercise.App
+namespace SchoolRegistryGroupExercise
 {
     public class App
     {
@@ -21,8 +22,10 @@ namespace SchoolRegistryGroupExercise.App
         {
             while (RunApp)
             {
-                //hej
+                Meny menu =new Meny
             }
         }
+
+
     }
 }
