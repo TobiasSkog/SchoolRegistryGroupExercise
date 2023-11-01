@@ -60,10 +60,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                     }
                 }
-                
             }
         }
-
-
     }
 }
