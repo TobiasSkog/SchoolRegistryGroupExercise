@@ -1,6 +1,6 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
 
-namespace SchoolRegistryGroupExercise.App
+namespace SchoolRegistryGroupExercise
 {
     public class App
     {
@@ -24,5 +24,7 @@ namespace SchoolRegistryGroupExercise.App
                 //hej
             }
         }
+
+
     }
 }
