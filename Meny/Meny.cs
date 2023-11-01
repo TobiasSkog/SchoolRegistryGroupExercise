@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SchoolRegistryGroupExercise.Meny
+﻿namespace SchoolRegistryGroupExercise.Meny
 {
-    internal class Meny
+    public static class Meny
     {
-        public void Menu()
+        public static void Menu()
         {
             string menuchoice = "";
 
-            while (menuchoice != "6")
+            while (menuchoice != "0" || menuchoice != "exit")
             {
-                Menu();
+                PrintMenu();
 
                 menuchoice = Console.ReadLine();
 
@@ -24,7 +18,7 @@ namespace SchoolRegistryGroupExercise.Meny
                         //lägg till lärare
                         break;
                     case "2":
-                      //lägg till elev
+                        //lägg till elev
                         break;
                     case "3":
                         //skriver ut alla lärare
@@ -35,7 +29,8 @@ namespace SchoolRegistryGroupExercise.Meny
                     case "5":
                         //skriv ut alla
                         break;
-                    case "6":
+                    case "0":
+                    case "exit":
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Tack för idag!");
                         Console.ForegroundColor = ConsoleColor.White;
@@ -46,7 +41,7 @@ namespace SchoolRegistryGroupExercise.Meny
                 }
             }
         }
-        public void PrintMenu()
+        public static void PrintMenu()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("***** Skolregistret *****");
@@ -56,7 +51,7 @@ namespace SchoolRegistryGroupExercise.Meny
             Console.WriteLine("3. Skriv ut alla lärare");
             Console.WriteLine("4. Skriv ut alla studerande");
             Console.WriteLine("5. Skriv ut alla i registret");
-            Console.WriteLine("\n 6. Avsluta\n");
+            Console.WriteLine("\n 0. Avsluta\n");
         }
     }
 }

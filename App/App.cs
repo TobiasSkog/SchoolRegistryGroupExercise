@@ -22,7 +22,7 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
-                Meny menu =new Meny
+                
             }
         }
 
