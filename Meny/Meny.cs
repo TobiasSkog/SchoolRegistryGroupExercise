@@ -12,7 +12,7 @@ namespace SchoolRegistryGroupExercise.Meny
         {
             string menuchoice = "";
 
-            while (menuchoice != "4")
+            while (menuchoice != "6")
             {
                 Menu();
 
