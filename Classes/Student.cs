@@ -10,8 +10,8 @@ namespace SchoolRegistryGroupExercise.Classes
     {
         public string Course { get; set; }
 
-        public Student(string course, string firstname, string lastname, string role, int personalnumber)
-            : base(firstname, lastname, role, personalnumber)
+        public Student(string course, string firstname, string lastname, Roles role, int personalnumber)
+            : base(firstname, lastname, Roles.Student, personalnumber)
         {
             Course = course;
         }

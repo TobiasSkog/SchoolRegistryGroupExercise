@@ -11,8 +11,8 @@ namespace SchoolRegistryGroupExercise.Classes
     {
         public string Subject { get; set; }
 
-        public Teacher(string subject, string firstname, string lastname, string role, int personalnumber)
-            : base(firstname, lastname, role, personalnumber)
+        public Teacher(string subject, string firstname, string lastname, Roles role, int personalnumber)
+            : base(firstname, lastname, Roles.Student, personalnumber)
         {
             Subject = subject;
         }
