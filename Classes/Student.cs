@@ -18,7 +18,7 @@ namespace SchoolRegistryGroupExercise.Classes
 
         public override void PrintInfo()
         {
-            Console.WriteLine();
+            Console.WriteLine($"Förnamn: {FirstName} Efternamn: {LastName}  Roll: {Role} Kurs: {Course} Id: {PersonalNumber}");
         }
     }
 }
