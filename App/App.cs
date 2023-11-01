@@ -21,7 +21,7 @@ namespace SchoolRegistryGroupExercise.App
         {
             while (RunApp)
             {
-
+                //hej
             }
         }
     }
