@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolRegistryGroupExercise.Classes
 {
-    public class Person
+    public abstract class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -22,6 +22,5 @@ namespace SchoolRegistryGroupExercise.Classes
         }
 
         public abstract void PrintInfo();
-        
     }
 }
