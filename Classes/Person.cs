@@ -21,9 +21,7 @@ namespace SchoolRegistryGroupExercise.Classes
             PersonalNumber = personalnumber;
         }
 
-        public virtual void PrintInfo()
-        {
-
-        }
+        public abstract void PrintInfo();
+        
     }
 }

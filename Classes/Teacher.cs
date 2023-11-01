@@ -19,7 +19,7 @@ namespace SchoolRegistryGroupExercise.Classes
 
         public override void PrintInfo()
         {
-            Console.WriteLine($"Förnamn: {FirstName} Efternamn: {LastName}  Roll: {Role} Undervisningsämne: {Subject} Id: {PersonalNumber}");
+            Console.WriteLine($"Förnamn: {FirstName} Efternamn: {LastName}  Roll: {Role} Undervisningsämne: {Subject} ID: {PersonalNumber}");
         }
 
     }
