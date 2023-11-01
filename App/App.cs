@@ -52,7 +52,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                         case "4":
                             //skriv ut alla studerande
-                            PrintAllStudents(Register);
+                            PrintAllStudents.PrintStudents(Register);
                             break;
                         case "5":
                             //skriv ut alla
