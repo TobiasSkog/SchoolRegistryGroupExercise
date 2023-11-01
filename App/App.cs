@@ -35,6 +35,7 @@ namespace SchoolRegistryGroupExercise
                     {
                         case "1":
                             //lägg till lärare
+                            
                             break;
                         case "2":
                             //lägg till elev
