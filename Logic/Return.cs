@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SchoolRegistryGroupExercise.Classes;
+﻿using SchoolRegistryGroupExercise.Classes;
 
 namespace SchoolRegistryGroupExercise.Logic
 {
     internal class Return
     {
-       public Person CreateClassBaseOnUserInput(Role role)
-        {          
-
+        public Person CreateClassBaseOnUserInput(Role role)
+        {
             Console.Write("Skriv in förnam: ");
             string firstName = Console.ReadLine();
             Console.Write("Skriv in efternamn: ");
@@ -25,14 +19,14 @@ namespace SchoolRegistryGroupExercise.Logic
                 case Role.Teacher:
                     Console.Write("Vilken ämne: ");
                     string subject = Console.ReadLine();
-                    return new Teacher(subject, firstName,lastName,peronalNumber);
-                    
+                    return new Teacher(subject, firstName, lastName, peronalNumber);
+
                 case Role.Student:
                     Console.Write("Vilken kurs: ");
                     string course = Console.ReadLine();
-                    return new Student(course, firstName, lastName, peronalNumber);                                        
+                    return new Student(course, firstName, lastName, peronalNumber);
             }
             return default;
-        }                   
+        }
     }
 }
