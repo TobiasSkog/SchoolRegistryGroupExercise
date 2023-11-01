@@ -7,14 +7,12 @@ namespace SchoolRegistryGroupExercise
         private List<Person> Register { get; set; }
         //private Return Return { get; set; }
         private bool RunApp { get; set; }
-        //private Meny Meny { get; set; }
 
         public App()
         {
             Register = new List<Person>();
             RunApp = true;
             //Return = new Return();
-            //Meny = new Meny();
 
         }
         private void Quit()
