@@ -24,7 +24,6 @@ namespace SchoolRegistryGroupExercise.Logic
             else
             {
                 Console.WriteLine("Det finns inga lärare i registret");
-                
             }
             Console.WriteLine("Tryck på valfri knapp för att fortsätta");
             Console.ReadKey();
