@@ -24,11 +24,45 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
-                    Meny.PrintMenu();
+                if (Register.Count == 0)
+                {
+                    // Print Add To List Meny
+                    Meny.PrintMenuEmptyRegister();
 
-                   string menuchoice = Console.ReadLine();
+                    string menuChoice = Console.ReadLine();
 
-                    switch (menuchoice)
+                    switch (menuChoice)
+                    {
+                        case "1":
+                            //lägg till lärare
+                            var teacher = Return.CreateClassBaseOnUserInput(Role.Teacher);
+                            Register.Add(teacher);
+
+                            break;
+                        case "2":
+                            //lägg till elev
+                            var student = Return.CreateClassBaseOnUserInput(Role.Student);
+                            Register.Add(student);
+                            break;
+                        case "0":
+                        case "exit":
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Tack för idag!");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Quit();
+                            break;
+                        default:
+                            Console.WriteLine("Välj någon av kategorierna ovan.\n");
+                            break;
+                    }
+                }
+                else
+                {
+                    Meny.PrintFullMenu();
+
+                    string menuChoice = Console.ReadLine();
+
+                    switch (menuChoice)
                     {
                         case "1":
                             //lägg till lärare
@@ -66,6 +100,7 @@ namespace SchoolRegistryGroupExercise
                     }
                 }
             }
-        }    
+        }
     }
+}
 
