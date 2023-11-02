@@ -1,6 +1,6 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
-using SchoolRegistryGroupExercise.Logic;
 using SchoolRegistryGroupExercise.ConsoleOut;
+using SchoolRegistryGroupExercise.Logic;
 
 namespace SchoolRegistryGroupExercise
 {
