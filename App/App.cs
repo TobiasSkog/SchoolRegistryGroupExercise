@@ -1,8 +1,4 @@
-﻿using SchoolRegistryGroupExercise.Classes;
-using SchoolRegistryGroupExercise.ConsoleOut;
-using SchoolRegistryGroupExercise.Logic;
-
-namespace SchoolRegistryGroupExercise
+﻿namespace SchoolRegistryGroupExercise
 {
     public class App
     {
@@ -85,7 +81,7 @@ namespace SchoolRegistryGroupExercise
                             break;
                         case "5":
                             //skriv ut alla
-                            //PrintEveryone(Register);
+                            PrintEverything.PrintEveryone(Register);
                             break;
                         case "0":
                         case "exit":

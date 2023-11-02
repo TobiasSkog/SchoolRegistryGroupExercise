@@ -20,10 +20,12 @@ namespace SchoolRegistryGroupExercise.Logic
                         teacher.PrintInfo();
                     }
                 }
+                Console.ReadKey();
             }
             else
             {
                 Console.WriteLine("Det finns inga lärare i registret");
+                Console.ReadKey();
             }
         }
     }
