@@ -1,4 +1,8 @@
-﻿namespace SchoolRegistryGroupExercise
+﻿using SchoolRegistryGroupExercise.Classes;
+using SchoolRegistryGroupExercise.ConsoleOut;
+using SchoolRegistryGroupExercise.Logic;
+
+namespace SchoolRegistryGroupExercise
 {
     public class App
     {
