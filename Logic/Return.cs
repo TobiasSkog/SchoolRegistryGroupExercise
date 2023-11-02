@@ -16,7 +16,6 @@ namespace SchoolRegistryGroupExercise.Logic
             //Person nummret måste vara minst 10 max 12 siffor
             int peronalNumber = int.Parse(Console.ReadLine());
 
-
             switch (role)
             {
                 case Role.Teacher:
