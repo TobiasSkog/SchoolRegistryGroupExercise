@@ -1,9 +1,4 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolRegistryGroupExercise.Logic
 {
@@ -11,15 +6,21 @@ namespace SchoolRegistryGroupExercise.Logic
     {
         public static void PrintStudents(List<Person> Register)
         {
-            
-            foreach (Student student in Register)
-                if (student != null) //får inte till felhanteringen riktigt än
+
+            if (Register.Count != 0)
+            {
+                foreach (var student in Register)
                 {
+                    if (student.Role == Role.Student)
                     {
-                        Console.WriteLine(student.FirstName + " " + student.LastName); //Bara namn eller all info?
+                        student.PrintInfo();
                     }
                 }
-                else { Console.WriteLine("Det finns inga fler elever i registret"); }
+            }
+            else
+            {
+                Console.WriteLine("Det finns inga elever i registret");
+            }
         }
     }
 }

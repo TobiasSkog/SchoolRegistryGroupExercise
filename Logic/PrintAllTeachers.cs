@@ -11,14 +11,20 @@ namespace SchoolRegistryGroupExercise.Logic
     {
         public static void PrintTeachers(List<Person>Register)
         {
-            foreach (Teacher teacher in Register)
-                if (teacher != null)
+            if (Register.Count != 0)
+            {
+                foreach (var teacher in Register)
                 {
+                    if (teacher.Role == Role.Student)
                     {
-                        Console.WriteLine(teacher.FirstName + " " +teacher.LastName); //Bara namn eller all info?
+                        teacher.PrintInfo();
                     }
                 }
-                else { Console.WriteLine("Det finns inga lärare i registret"); }
+            }
+            else
+            {
+                Console.WriteLine("Det finns inga lärare i registret");
+            }
         }
     }
 }
