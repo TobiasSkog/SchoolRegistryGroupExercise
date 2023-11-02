@@ -6,7 +6,6 @@ namespace SchoolRegistryGroupExercise.Logic
     {
         public static void PrintStudents(List<Person> Register)
         {
-
             if (Register.Count != 0)
             {
                 foreach (var student in Register)
@@ -16,10 +15,12 @@ namespace SchoolRegistryGroupExercise.Logic
                         student.PrintInfo();
                     }
                 }
+                Console.ReadKey();
             }
             else
             {
                 Console.WriteLine("Det finns inga elever i registret");
+                Console.ReadKey();
             }
         }
     }
