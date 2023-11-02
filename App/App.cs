@@ -24,6 +24,7 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
+                Console.Clear();
                 if (Register.Count == 0)
                 {
                     // Print Add To List Meny
