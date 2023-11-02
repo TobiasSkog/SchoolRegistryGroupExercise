@@ -14,7 +14,7 @@
             Console.WriteLine("(5) Skriv ut alla i registret");
             Console.WriteLine("\n (0/exit) Avsluta\n");
         }
-        public static void PrintMenuEmptyList()
+        public static void PrintMenuEmptyRegister()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("\n***** Skolregistret *****\n");
