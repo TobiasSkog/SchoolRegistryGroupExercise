@@ -15,13 +15,13 @@ namespace SchoolRegistryGroupExercise.Logic
                         student.PrintInfo();
                     }
                 }
-                Console.ReadKey();
             }
             else
             {
                 Console.WriteLine("Det finns inga elever i registret");
-                Console.ReadKey();
             }
+            Console.WriteLine("Tryck på valfri knapp för att fortsätta");
+            Console.ReadKey();
         }
     }
 }
