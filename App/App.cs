@@ -1,6 +1,7 @@
 ﻿using SchoolRegistryGroupExercise.Classes;
 using SchoolRegistryGroupExercise.Logic;
 using SchoolRegistryGroupExercise.ConsoleOut;
+
 namespace SchoolRegistryGroupExercise
 {
     public class App
@@ -23,6 +24,7 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
+                Console.Clear();
                 if (Register.Count == 0)
                 {
                     // Print Add To List Meny
