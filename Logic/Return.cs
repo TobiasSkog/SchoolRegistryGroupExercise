@@ -13,7 +13,8 @@ namespace SchoolRegistryGroupExercise.Logic
             Console.Write("Skriv in personummer: ");
 
             //Hantera fel inmatning av användaren
-            //Person nummret måste vara minst 10 max 12 siffor
+            //Person numret måste vara minst 10 max 12 siffor
+
             int peronalNumber = int.Parse(Console.ReadLine());
 
             switch (role)
