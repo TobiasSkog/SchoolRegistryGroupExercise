@@ -10,7 +10,6 @@
             Course = course;
             Role = Role.Student;
         }
-
         public override void PrintInfo()
         {
             Console.WriteLine($"Förnamn: {FirstName} Efternamn: {LastName}  Roll: {Role} Kurs: {Course} Personnummer: {PersonalNumber}");
