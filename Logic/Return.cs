@@ -28,6 +28,7 @@ namespace SchoolRegistryGroupExercise.Logic
                     string course = Console.ReadLine();
                     return new Student(course, firstName, lastName, peronalNumber);
             }
+
             return default;
         }
     }
