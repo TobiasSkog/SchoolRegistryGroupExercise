@@ -11,9 +11,7 @@ namespace SchoolRegistryGroupExercise.Logic
             Console.Write("Skriv in efternamn: ");
             string lastName = Console.ReadLine();
             Console.Write("Skriv in personummer: ");
-            int peronalNumber = int.Parse(Console.ReadLine());
-
-
+            int peronalNumber = int.Parse(Console.ReadLine());          
             switch (role)
             {
                 case Role.Teacher:
