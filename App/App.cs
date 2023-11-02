@@ -24,7 +24,7 @@ namespace SchoolRegistryGroupExercise
         {
             while (RunApp)
             {
-                    Meny.PrintMenu();
+                    Meny.PrintFullMenu();
 
                    string menuchoice = Console.ReadLine();
 
@@ -50,9 +50,9 @@ namespace SchoolRegistryGroupExercise
                             PrintAllStudents.PrintStudents(Register);
                             break;
                         case "5":
-                            //skriv ut alla
-                            //PrintEveryone(Register);
-                            break;
+                        //skriv ut alla
+                        PrintEverything.PrintEveryone(Register);
+                        break;
                         case "0":
                         case "exit":
                             Console.ForegroundColor = ConsoleColor.Green;
