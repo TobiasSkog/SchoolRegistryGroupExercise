@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SchoolRegistryGroupExercise.Classes;
 
 namespace SchoolRegistryGroupExercise.Logic
 {
     static class PrintEverything
     {
-        // Comment: print all students and teachers
-
-
-        // Comment: Static method
-        public static void Print()
+        public static void PrintEveryone(List<Person> register)
         {
-
+            if (register.Count == 0)
+            {
+                Console.WriteLine("Listan är tom!");
+                return;
+            }
+            
+            foreach (var person in register)
+            {
+                person.PrintInfo();
+            }
         }
     }
 }
