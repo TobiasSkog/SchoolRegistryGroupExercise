@@ -6,11 +6,11 @@ namespace SchoolRegistryGroupExercise
 {
     public class App
     {
-        private List<Person> Register { get; set; }
+        private List<Person> Register { get; set; } //Privet fält
         //private Return Return { get; set; }       
         private bool RunApp { get; set; }
 
-        public App()
+        public App() // konstruktor
         {
             Register = new List<Person>();
             RunApp = true;
